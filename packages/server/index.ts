@@ -9,11 +9,11 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello World!');
+    res.send('Hello World Server!');
 });
 
 app.get('/api/hello', (req: Request, res: Response) => {
-    res.json({message: 'Hello World!'});
+    res.json({message: 'Hello World Client!'});
 });
 
 app.listen(port, () => {
