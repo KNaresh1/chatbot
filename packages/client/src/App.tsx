@@ -1,19 +1,11 @@
-import { useEffect, useState } from 'react';
-import { Button } from '@/components/ui/button.tsx';
+import { ChatBot } from '@components';
 
 function App() {
-   const [message, setMessage] = useState('');
-
-   useEffect(() => {
-      fetch('/api/hello')
-         .then((res) => res.json())
-         .then((data) => setMessage(data.message));
-   }, []);
-
    return (
-      <div className="p-4">
-         <p className="font-bold text-3xl pb-4">{message}</p>
-         <Button>Click Me!</Button>
+      <div className="flex p-4 w-full h-screen items-center justify-center">
+         <div className="w-full max-w-3xl h-full">
+            <ChatBot />
+         </div>
       </div>
    );
 }
