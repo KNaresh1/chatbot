@@ -29,8 +29,6 @@ elegant UI components powered by **TailwindCSS** and **shadcn/ui**.
 
 ---
 
----
-
 ## ⚙️ Setup & Installation
 
 ### Install dependencies
