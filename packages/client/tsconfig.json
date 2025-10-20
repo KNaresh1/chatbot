@@ -6,6 +6,12 @@
       "@/*": [
         "./src/*"
       ],
+      "@assets": [
+        "./src/assets/index.ts"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
       "@components": [
         "./src/components/index.ts"
       ],
